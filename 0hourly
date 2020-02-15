@@ -1,0 +1,7 @@
+# Run the hourly jobs
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+01 * * * * root run-parts /etc/cron.hourly
+*/1 * * * * root /usr/lib64/sa/sa1 1 1
+53 23 * * * root /usr/lib64/sa/sa2 -A 
